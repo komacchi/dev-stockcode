@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-1.7.1.js"></script>    
+<title>HTML5を使ったメモ帳テスト</title>
+</head>
+<body>
+ <h1>メモ帳</h1>   
+<textarea name="meno" id="memo" cols="40" rows="10"></textarea>
+<p id="message" style="display:none;">Saving...</p>
+<p><!--<input type="button" id="save" value="保存">--><input type="button" id="clear" value="消去"></p>
+
+<script>
+
+$(function(){
+
+    if(localStorage.getItem('memo')){
+    $('#memo').val(localStorage.getItem('memo'));
+    }
+
+    $('#clear').click(function(){
+        $('#memo').val('');
+    localStorage.removeItem('memo');
+    });
+
+//    (function autoSave(){
+ //       localStorage.setItem('memo',$('#memo').val());
+ //       $('#message').show().hide(200);
+ //       setTimeout(autoSave,1000);
+//    })();
+
+    $('#memo').bind('keyup',function(){
+        localStorage.setItem('memo',$('#memo').val());
+    });
+
+    $('#save').click(function(){
+    localStorage.setItem('memo',$('#memo').val());
+    console.log(localStorage.getItem('memo'));
+
+});
+
+
+});
+</script>
+
+</body>
+</html>
