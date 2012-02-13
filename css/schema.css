@@ -1,0 +1,226 @@
+@charset "utf-8";
+
+/*==================================================
+filename: schema.css
+Auther: Division one a.k.a. Satoshi KOMATSU
+Version:1.00
+Last update: 2011/11/26
+====================================================*/
+
+
+/* schema
+===================================================*/
+
+html {
+ overflow-y: scroll;
+}
+
+body {
+margin:0 auto;
+padding:0;
+text-align:center;
+/*line-height:160%;*/
+font-size:87%;
+font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','MS Pゴシック',sans-serif;
+}
+
+
+/* link parts */
+
+a{
+outline:none;
+}
+
+a:link,a:visited{
+text-decoration:none;
+color:#333;
+}
+
+a:hover,a:active{
+text-decoration:underline;
+}
+
+@media print {
+*html body {
+zoom: 65%; 
+}
+}
+
+#Wrapper{
+margin:0 auto;
+padding:0;
+width:100%;
+text-align:center;
+background:#fff url(../img/headerbg.gif) repeat-x;
+}
+
+#Wrapper:after {
+   content: ".";
+   display: block;
+   clear: both;
+   height: 0;
+   visibility: hidden;
+}
+
+/* header
+===================================================*/
+header{
+margin:0 auto 30px auto;
+width:970px;
+height:370px;
+position:relative;
+}
+
+header h1#toph1{
+width:970px;
+height:300px;
+background:url(../../img/top_h1bg.jpg) no-repeat;
+text-indent:-9999px;
+}
+
+header h1#vinh1{
+width:970px;
+height:300px;
+background:url(../../vin/img/h1_vin.jpg) no-repeat;
+text-indent:-9999px;
+}
+
+header h1#concepth1{
+width:970px;
+height:300px;
+background:url(../../concept/img/h1_concept.jpg) no-repeat;
+text-indent:-9999px;
+}
+
+header h1#madeleineh1{
+width:970px;
+height:300px;
+background:url(../../madeleine/img/h1_madeleine.jpg) no-repeat;
+text-indent:-9999px;
+}
+
+header h1#menuh1{
+width:970px;
+height:300px;
+background:url(../../menu/img/h1_menu.jpg) no-repeat;
+text-indent:-9999px;
+}
+
+header h1#accessh1{
+width:970px;
+height:300px;
+background:url(../../access/img/h1_access.jpg) no-repeat;
+text-indent:-9999px;
+}
+
+nav{
+width:666px;
+margin-left:19px;
+padding:0;
+}
+
+nav ul{
+width:666px;
+height:60px;
+}
+
+nav ul li{
+list-style-type:none;
+float:left;
+}
+
+header #blackboard{
+width:245px;
+height:250px;
+position:absolute;
+top:99px;
+left:695px;
+}
+
+/* contents
+===================================================*/
+
+#Contents{
+width:930px;
+margin:0 auto;
+padding:0 20px;
+text-align:left;
+}
+
+article{
+float:left;
+width:624px;
+}
+
+aside{
+float:right;
+width:255px;
+}
+
+aside ul{
+margin:0;
+padding:0;
+}
+
+aside ul li{
+list-style-type:none;
+margin-bottom:20px;
+}
+
+.caption{
+padding:10px 0 20px 0;
+font-size:85%;
+}
+
+/* footer
+===================================================*/
+
+footer{
+clear:both;
+margin:40px auto 0 auto;
+padding:40px 20px;
+border-top:1px solid #ccc;
+width:930px;
+height:90px;
+position:relative;
+}
+
+footer:after {
+   content: ".";
+   display: block;
+   clear: both;
+   height: 0;
+   visibility: hidden;
+}
+
+footer ul{
+float:left;
+margin:0;
+padding:0;
+}
+
+footer ul li{
+float:left;
+margin-right:15px;
+list-style-type:none;
+}
+
+footer .pagetop{
+padding:0;
+font-size:90%;
+top:70px;
+right:20px;
+position:absolute;
+}
+
+footer .pagetop a{
+background:url(../img/icon_pagetop.gif) no-repeat;
+padding:0 0 0 21px;
+}
+
+footer #copyright{
+position:absolute;
+bottom:40px;
+right:20px;
+font-size:90%;
+}

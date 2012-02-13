@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*==================================================
+filename: initialize.css
+Auther: Division one a.k.a. Satoshi KOMATSU
+Version:1.00
+Last update: 2011/11/26
+====================================================*/
+@import "reset.css";
+@import "schema.css";
+@import "navigation.css";
+@import "module.css";
+@import "element.css";

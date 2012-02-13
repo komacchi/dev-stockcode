@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+/*==================================================
+filename: navigation.css
+Auther: Division one a.k.a. Satoshi KOMATSU
+Version:1.00
+Last update: 2011/11/26
+====================================================*/
+
+
+/* Header Global navi
+===================================================*/
+nav ul li a{
+display:block;
+background:url(../img/navi_normal.gif) no-repeat;
+}
+
+nav ul li a.home{
+width:133px;
+height:60px;
+text-indent:-9999px;
+background:url(../img/navi_normal.gif) no-repeat 0 0;
+}
+
+nav ul li a.concept{
+width:133px;
+height:60px;
+text-indent:-9999px;
+background:url(../img/navi_normal.gif) no-repeat -133px 0;
+}
+
+nav ul li a.menu{
+width:133px;
+height:60px;
+text-indent:-9999px;
+background:url(../img/navi_normal.gif) no-repeat -266px 0;
+}
+
+nav ul li a.vin{
+width:133px;
+height:60px;
+text-indent:-9999px;
+background:url(../img/navi_normal.gif) no-repeat -399px 0;
+}
+
+nav ul li a.access{
+width:134px;
+height:60px;
+text-indent:-9999px;
+background:url(../img/navi_normal.gif) no-repeat -532px 0;
+}
+
+/* hover */
+nav ul li a.home:hover,
+nav ul li.homeStay{
+width:133px;
+height:60px;
+text-indent:-9999px;
+background:url(../img/navi_over.gif) no-repeat 0 0;
+}
+
+nav ul li a.concept:hover,
+nav ul li.conceptStay{
+width:133px;
+height:60px;
+text-indent:-9999px;
+background:url(../img/navi_over.gif) no-repeat -133px 0;
+}
+
+nav ul li a.menu:hover,
+nav ul li.menuStay{
+width:133px;
+height:60px;
+text-indent:-9999px;
+background:url(../img/navi_over.gif) no-repeat -266px 0;
+}
+
+nav ul li a.vin:hover,
+nav ul li.vinStay{
+width:133px;
+height:60px;
+text-indent:-9999px;
+background:url(../img/navi_over.gif) no-repeat -399px 0;
+}
+
+nav ul li a.access:hover,
+nav ul li.accessStay{
+width:134px;
+height:60px;
+text-indent:-9999px;
+background:url(../img/navi_over.gif) no-repeat -532px 0;
+}
