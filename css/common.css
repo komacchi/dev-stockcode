@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 /*==================================================
-filename: element.css
+filename: common.css
 Auther: Division one a.k.a. Satoshi KOMATSU
 Version:1.00
-Last update: 2011/11/26
+Last update: 2012/02/13
 ====================================================*/
 
 
@@ -45,13 +45,9 @@ float:left;
 float:right;
 }
 
-p.indentP{
+p.indent{
 display:block;
 margin-left:1em;
-}
-
-.madbtn{
-margin:75px 0 0 0;
 }
 
 /* margin-padding */
@@ -61,11 +57,6 @@ margin-top:40px;
 }
 .m60t{
 margin-top:60px;
-}
-
-.rednotice{
-color:#f00;
-font-weight:bold;
 }
 
 /* table close type */
@@ -86,26 +77,7 @@ padding:10px 0;
 text-align:right;
 }
 
-section table td.tdodd{
-width:90%;
-text-align:left!important;
-}
-
-section table td.bdr{
-padding:0!important;
-background:url(../img/dot.gif) repeat-x;
-}
 /* list */
-
-ul.course{
-margin:0;
-padding:0;
-}
-
-ul.course li{
-list-style-type:none;
-line-height:0;
-}
 
 ul.list li{
 list-style-type: disc;
@@ -114,39 +86,30 @@ ol li{
 list-style-type: decimal;
 }
 
-div.titlebg_5th ul.titlelist{
-margin:8px 0 0 0;
-padding:0;
-}
-
-ul.titlelist li{
-float:left;
-margin-right:3px;
-}
-
 /* dl list */
-#topics dl{
+dl{
 clear:both;
 padding:20px 0;
 border-bottom:1px dotted #333;
 }
 
-#topics dl dt{
+dl dt{
 float:left;
 width:89px;
 padding:0 0 0 30px;
-background:url(../../img/icon_arrow.gif) no-repeat;
 border-right:1px solid #333;
 }
 
-#topics dl dd{
+dl dd{
 margin-left:120px;
 padding:0 20px;
 width:auto;
 }
 
-#topics dl dd p,
-#topics dl dd div{
+dl dd p,
+dl dd div{
 margin:0;
 padding:0;
 }
+
+
