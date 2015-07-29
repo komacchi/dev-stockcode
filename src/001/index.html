@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<title>画像おきば【PRO】</title>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-control" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<link rev="made" href="http://www.gnavi.co.jp/company/" />
+<link rel="shortcut icon" href="https://admin.gnavi.co.jp/proframe/lib/img/favicon.ico" />
+<link rel="stylesheet" href="../../c/pro_l.css" />
+<link rel="stylesheet" href="../../c/pro_c.css" />
+<link rel="stylesheet" href="../../c/pro_fw.css" />
+<link rel="stylesheet" href="css/img_strage.css" />
+</head>
+
+<body id="i900030" class="pro">
+<a name="top"></a>
+<!--PAGE-->
+<div id="page">
+<!--HEADER-->
+<div id="header">
+<!--headerbar-->
+<div id="headerBar" class="clfix">
+<div id="headerTopLink"><a href="#">トップページへ</a></div>
+<ul id="headerBarLink" >
+<li><a href="#" class="regulation" target="_blank">情報表現規定</a></li>
+<li><a href="#" class="service">全サービス案内</a></li>
+<li><a href="#" class="logout">ログアウト</a></li>
+</ul>
+</div>
+<!--/headerbar-->
+<!--headerMain-->
+<div id="headerMain" class="clfix"><a href="#" id="contVI">ぐるなび PRO for 飲食店</a>
+<div id="userAgent">
+<dl>
+<dt class="userData l"><span class="shopName">デザインチーム共有用のテスト店舗</span><span class="shopID">（ID:i900030）</span></dt>
+<dd>
+<p class="shopPoint">現在の飲食店ポイント：<em class="shopPoint">0</em>ポイント</p>
+<ul class="adminLink">
+<li class="pointHowto"><a href="#">ポイントについて</a></li>
+<li class="pointUse"><a href="#">ポイントを使う</a></li>
+<li class="adminTool"><a href="#">管理ツール一覧</a></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<!--/headerMain-->
+</div>
+<!--/HEADER-->
+<!--CONTENTBAR-->
+<div id="contentBar" class="clfix">
+<h1>レストランページ編集</h1>
+<ul id="contentLink">
+<li class="help"><a href="#" target="help" class="ptArr">困った時は</a></li>
+</ul>
+</div>
+<!--/$CONTENTTITLE-->
+<!--CONTAINER-->
+<div id="container" class="clfix">
+<!--$CONTENT$-->
+<div id="content">
+
+
+<!--==========================================================================================
+	$Contents
+==========================================================================================-->
+<div id="proMain">
+<div class="pro-img-strage pro-img-strage-index">
+<!-- <form action="form.php" method="post"> -->
+
+<h2 class="pro-t2">画像おきば</h2>
+<h4 class="pro-t4"><span class="square">■</span>画像登録</h4>
+<div class="pro-col2 clfix">
+<div class="pro-uploadbtn mb10 mr10 fl">
+<div class="inner"><input type="file" name="upload" class="pro-upload-hidden" /></div>
+<!-- 100枚超えた場合
+<div class="inner"><input name="upload" class="c11 pro-upload-hidden" /></div>
+-->
+<a href="#" class="pro-btn-s px12">ファイルを選択してアップロード</a>
+</div>
+<p class="fl mt5">画像アップロードに関する注意事項は<a href="#" class="c12">こちら</a></p>
+
+</div>
+
+<!-- upload container -->
+<div class="upload-container pro-bgc3" id="js-upload">
+
+	<div class="pro-box pro-box0 pro-bgc3 pro-toggle mb10">
+	<a href="#" class="pro-toggle-t"><span class="pro-icon icon-pl">+</span>または画像をドラッグ&amp;ドロップしてアップロード</a>
+	<div class="pro-toggle-box open"><!-- ★作成時に開いたままにしたい場合は<div class="pro-toggle-box open">★ -->
+		<p class="pro-txt3 mb10 js-upload-error">画像おきばの空き容量がないため、アップロードできません。画像おきばの画像を削除し、十分な容量を確保した後に再度アップロードを行ってください。<br />
+			アップロードできるファイルはjpg、gif、pngのみです。<br />
+			ファイルの容量が10MBを超えているため、アップロードできません。ファイルの容量を10MB未満にし、再度アップロードを行ってください。<br />
+			CMYK形式のjpgファイルはアップロードできません。<br />
+			画像枚数が100枚を超えているため、アップロードできません。画像枚数を100枚以内にし、再度アップロードを行ってください。</p>
+		<div class="preview-container">
+			<!-- <progress id="progressbar" class="type-stripe" value="0" max="100"></progress> -->
+			<div class="error-message-accepted mb10 pro-txt3">アップロードできるファイルはjpg、gif、pngのみです。</div>
+			<div class="error-message-filecount mb10 pro-txt3">画像枚数が100枚を超えているため、アップロードできません。画像枚数を100枚以内にし、再度アップロードを行ってください。</div>
+		</div>
+
+	<div class="upload-ddhandler upload-ddhandler_bgcolor">
+			<form action="/file-upload" id="my-awesome-dropzone">
+				<p>ここに画像をドラッグ&amp;ドロップしてください</p>
+			</form>
+	</div>
+
+	<!-- <div class="progressbar-container mt15 mb15"> -->
+		<!-- <div class="pace"></div> -->
+		<!-- <progress id="progress" class="pace"><span id="f-count"></span></progress> -->
+
+	<!-- </div> -->
+	<div class="ac mt15">
+		<div class="progress-box-item">
+			<div class="progress-value js-progress-value" style="width:0%;"></div>
+		</div>
+		<div class="uploading mt15"><span class="successcount">0</span> / <span class="totalcount">this.files.length</span> アップロード中</div>
+		<div class="succes-upload mt15"><span>アップロード完了</span></div>
+	</div>
+
+	</div>
+	<!-- /.pro-toggle --></div>
+
+</div>
+<!-- /upload container -->
+<p class="js-upload-disabled">※Internet Explorer8以下をご利用の場合、ドラッグ&amp;ドロップによる画像登録機能はご利用できません。</p>
+
+<h4 class="pro-t4"><span class="square">■</span>画像一覧</h4>
+
+<!-- 画像タイトル検索 -->
+<div class="mt10 mb10 pro-bgc3 key-world clfix">
+	<div class="fl">画像タイトル検索<input type="text" class="pro-input" placeholder="例：メニュー"></div>
+	<ul id="submitBox" class="clfix">
+		<li><input type="submit" value="検索" class="pro-btn-s px12"></li>
+		<li><input type="reset" value="クリア" class="pro-btn-s px12"></li>
+	</ul>
+</div>
+<!-- /画像タイトル検索 -->
+
+<div class="clfix">
+	<div class="pro-img-strage-bg">
+		<table class="pro-img-strage-nav">
+			<tbody>
+				<tr>
+					<th rowspan="2">絞り込み</th>
+					<td>
+						<p class="use-status-area mb5 mt5"><span class="use-status on-status">使用状況</span>｜<a href="#">すべて</a>｜<a href="#">使用中</a>｜<a href="#">未使用</a></p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p class="group-status-area mb5 mt5">
+							<span class="group-status on-status">グループ別</span><a href="#">すべて</a>｜<a href="#">春フェア</a>｜<a href="#">夏フェア</a>
+						</p>
+						<p class="group-ctrlbar"><a href="#" class="pro-btn-s px12 c1 mb0">グループ作成</a><a href="#" class="pro-btn-s px12 c3 mb0">グループ削除</a><a href="#" class="c10 mb0 inb"><img src="img/question_icon.png" width="24" height="24"></a></p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!--
+<p class="refine-tag mb20"><a href="#" class="pro-btn-s px12">新規タグ作成</a><span class="pro-btn-s px12 btn-disabled">新規タグ作成</span><a href="#" class="pro-btn-s px12">タグを削除</a><span class="pro-txt3 mr10">作成できるタグは20個までです</span></p>
+-->
+<div class="meter-box clfix">
+<div class="meter-box-in">
+<div class="meter-text">残り&nbsp;100MB/1024MB(100%)</div>
+<div class="meter-box-item">
+<div class="meter-value" style="width: 60%;"></div>
+</div>
+</div>
+</div>
+
+
+<div class="pos mb20 ar">
+	表示件数：<a href="#">20件</a>｜<span class="bold">50件</span>｜<span class="bold">100件</span>｜<span class="bold">200件</span>
+</div>
+
+<div class="pos mb10">
+	並び替え：<a href="#">アップロード日時順▼</a>｜<a href="#">タイトル順▼</a>
+	<ul class="sort-list abs absr">
+		<li class="fl"><span class="list-icon"><strong class="bold">リスト表示</strong></span></li>
+		<li class="fl">｜</li>
+		<li class="fl"><span class="thumbs-icon"><a href="#">サムネイル表示</a></span></li>
+	</ul>
+</div>
+
+
+
+<div class="mt10 mb10 pro-bgc4 ctrlbar clfix"><p class="inb ml10 mr10 mt10 mb10"><label class="pro-label"><input type="checkbox" name="top_board_status2" class="pro-checkbox" />全選択/解除</label><img src="../../c/icon-check.png" />の画像をまとめて</p><a href="#" class="pro-btn-s px12 mb0 c2 padding-btn btn-disabled">削除</a><!--改行禁止--><a href="#" class="pro-btn-s px12 mb0 c8 padding-btn">グループ追加</a><!--改行禁止--><a href="#" class="pro-btn-s px12 mb0 c4 size-padding"><span class="size-emote">サイズ変更</span></a><a href="#" class="group-icon-pos c9"><img src="img/question_icon.png" width="24" height="24"></a></div>
+
+<table class="pro-table mb10">
+<tbody>
+<tr>
+<td colspan="4">
+<div class="notfound">画像がありません。</div></td>
+</tr>
+</tbody>
+</table>
+
+
+<!--paging-area-->
+<div class="paging-area clfix">
+<dl class="main-paginglist">
+  <dt>ページ：</dt>
+  <dd>
+	<ol>
+	  <li class="prev"><a href="#">&lt;&lt;</a></li>
+	  <li class="now"><strong>1</strong></li>
+	  <li><a href="#">2</a></li>
+	  <li><a href="#">3</a></li>
+	  <li><a href="#">4</a></li>
+	  <li><a href="#">5</a></li>
+	  <li><a href="#">6</a></li>
+	  <li><a href="#">7</a></li>
+	  <li><a href="#">8</a></li>
+	  <li><a href="#">9</a></li>
+	  <li><a href="#">10</a></li>
+	  <li class="prev"><a href="#">&gt;&gt;</a></li>
+	</ol>
+  </dd>
+</dl>
+
+</div>
+<!--//paging-area-->
+</div>
+
+<!-- </form> -->
+</div><!--/pro-img-strage-->
+</div><!--/proMain-->
+<!--==========================================================================================
+	$Contents
+==========================================================================================-->
+
+<div id="hiddenBox">
+<!--新規グループ作成 c1-->
+<div id="box-c1" class="pro-cbox box-size750">
+<!-- box-header -->
+<div class="box-header clfix">
+<h3 class="box-head"><span class="solid"></span>新規グループ作成</h3>
+<p class="box-close-btn"><a href="#">キャンセル（閉じる）</a></p>
+</div>
+<!-- /box-header -->
+<!-- box-body -->
+<div class="box-body">
+<h4 class="pro-t4"><span class="square">■</span>新規グループ</h4>
+<div class="img-tag-box">
+<div class="pro-counterbox">
+<p>全角10文字以内</p>
+<input type="text" class="pro-input pro-count-str input-tx10" value="一二三四五六七八九十①②" placeholder="（例）春メニュー" /><p class="pro-counter ml5 inb"><span class="pro-count-val">0</span><span>&nbsp;/&nbsp;</span><span class="pro-count-max">10</span>文字</p>
+</div>
+<p>※管理用のグループです。画像管理以外には使用しません。</p>
+</div>
+<div class="ac mt20">
+<input type="submit" value="保存" class="pro-btn" />
+</div>
+</div>
+<!-- /box-body -->
+<!-- box-footer -->
+<div class="box-footer">
+<p class="box-close-btn"><a href="#">キャンセル（閉じる）</a></p>
+</div>
+<!-- box-footer -->
+</div>
+<!--画像削除 c2-->
+<div id="box-c2" class="pro-fw-box box-size380">
+<div class="pro-fw-body">
+<p class="px14 bold">選択した画像を削除してよろしいですか？</p>
+<div class="ac mt20">
+<input type="submit" class="pro-btn" value="削除">
+</div>
+</div>
+<div class="box-footer">
+<p class="box-close-btn"><a href="#">キャンセル（閉じる）</a></p>
+</div>
+</div>
+<!--グループを削除 c3-->
+<div id="box-c3" class="pro-cbox box-size750">
+<!-- box-header -->
+<div class="box-header clfix">
+<h3 class="box-head"><span class="solid"></span>画像のグループを削除</h3>
+<p class="box-close-btn"><a href="#">キャンセル（閉じる）</a></p>
+</div>
+<!-- /box-header -->
+<!-- box-body -->
+<div class="box-body">
+<p>画像のグループを削除できます。<br />削除するグループを選択してください。</p>
+<ul class="img-add-tag-list clfix">
+<li><label class="pro-label"><input type="checkbox" name="img_add_tag1" value="" class="pro-checkbox" />春メニュー</label></li>
+<li><label class="pro-label"><input type="checkbox"  name="img_add_tag2" value="1" class="pro-checkbox" />秋メニュー</label></li>
+<li><label class="pro-label"><input type="checkbox" name="img_add_tag3" value="1" class="pro-checkbox" />クリスマス</label></li>
+<li><label class="pro-label"><input type="checkbox"  name="img_add_tag4" value="1" class="pro-checkbox" />通年</label></li>
+<li><label class="pro-label"><input type="checkbox" name="img_add_tag5" value="1" class="pro-checkbox" />人気</label></li>
+<li><label class="pro-label"><input type="checkbox"  name="img_add_tag6" value="1" class="pro-checkbox" />冬メニュー</label></li>
+<li><label class="pro-label"><input type="checkbox" name="img_add_tag7" value="1" class="pro-checkbox" />夏メニュー</label></li>
+<li><label class="pro-label"><input type="checkbox"  name="img_add_tag8" value="1" class="pro-checkbox" />新メニュー</label></li>
+<li><label class="pro-label"><input type="checkbox" name="img_add_tag9" value="1" class="pro-checkbox" />個室</label></li>
+<li><label class="pro-label"><input type="checkbox"  name="img_add_tag10" value="1" class="pro-checkbox" />キャンペーン用</label></li>
+<li><label class="pro-label"><input type="checkbox"  name="img_add_tag11" value="1" class="pro-checkbox" />販促用</label></li>
+</ul>
+<p class="pro-txt3 bold">※グループを削除した場合、全ての画像から該当のグループが削除されます</p>
+<div class="ac mt20">
+<input type="submit" value="削除" class="pro-btn" />
+</div>
+</div>
+<!-- /box-body -->
+<!-- box-footer -->
+<div class="box-footer">
+<p class="box-close-btn"><a href="#">キャンセル（閉じる）</a></p>
+</div>
+<!-- box-footer -->
+</div>
+<!--サムネイル画像の変更 c4-->
+<div id="box-c4" class="pro-cbox box-size750">
+<!-- box-header -->
+<div class="box-header clfix">
+<h3 class="box-head"><span class="solid"></span>サムネイル画像の変更</h3>
+<p class="box-close-btn"><a href="#">キャンセル（閉じる）</a></p>
+</div>
+<!-- /box-header -->
+<!-- box-body -->
+<div class="box-body">
+<p>検索結果や写真のリストに表示される画像の表示方法を変更します。</p>
+<ul class="tumb-type-list clfix">
+<li class="fl clfix">
+<div class="fl"><label class="pro-label"><input type="radio" name="tumb_type" value="" class="pro-radio" checked="checked" />自動切抜き(推奨)</label></div>
+<div class="t6 pro-p fl">
+<p class="figure"><img src="img/sample.jpg" width="100" height="100" /></p>
+</div>
+</li>
+<li class="fr clfix">
+<div class="fl"><label class="pro-label"><input type="radio" name="tumb_type" value="" class="pro-radio" />画像縮小</label></div>
+<div class="t6 pro-p fl">
+<p class="figure"><img src="img/sample2.jpg" width="100" height="80" /></p>
+</div>
+</li>
+</ul>
+<div class="ac mt20">
+<input type="submit" value="変更" class="pro-btn" />
+</div>
+</div>
+<!-- /box-body -->
+<!-- box-footer -->
+<div class="box-footer">
+<p class="box-close-btn"><a href="#">キャンセル（閉じる）</a></p>
+</div>
+<!-- box-footer -->
+</div>
+<!--画像にグループを追加 c8-->
+<div id="box-c8" class="pro-cbox box-size750">
+<!-- box-header -->
+<div class="box-header clfix">
+<h3 class="box-head"><span class="solid"></span>画像にグループを追加</h3>
+<p class="box-close-btn"><a href="#">キャンセル（閉じる）</a></p>
+</div>
+<!-- /box-header -->
+<!-- box-body -->
+<div class="box-body">
+<p>画像にグループを追加できます（20個まで）</p>
+<ul class="img-add-tag-list clfix">
+<li><label class="pro-label"><input type="checkbox" name="img_add_tag1" value="" class="pro-checkbox" />春メニュー</label></li>
+<li><label class="pro-label"><input type="checkbox"  name="img_add_tag2" value="1" class="pro-checkbox" />秋メニュー</label></li>
+<li><label class="pro-label"><input type="checkbox" name="img_add_tag3" value="1" class="pro-checkbox" />クリスマス</label></li>
+<li><label class="pro-label"><input type="checkbox"  name="img_add_tag4" value="1" class="pro-checkbox" />通年</label></li>
+<li><label class="pro-label"><input type="checkbox" name="img_add_tag5" value="1" class="pro-checkbox" />人気</label></li>
+<li><label class="pro-label"><input type="checkbox"  name="img_add_tag6" value="1" class="pro-checkbox" />冬メニュー</label></li>
+<li><label class="pro-label"><input type="checkbox" name="img_add_tag7" value="1" class="pro-checkbox" />夏メニュー</label></li>
+<li><label class="pro-label"><input type="checkbox"  name="img_add_tag8" value="1" class="pro-checkbox" />新メニュー</label></li>
+<li><label class="pro-label"><input type="checkbox" name="img_add_tag9" value="1" class="pro-checkbox" />個室</label></li>
+<li><label class="pro-label"><input type="checkbox"  name="img_add_tag10" value="1" class="pro-checkbox" />キャンペーン用</label></li>
+<li><label class="pro-label"><input type="checkbox"  name="img_add_tag11" value="1" class="pro-checkbox" />販促用</label></li>
+</ul>
+<div class="ac mt20">
+<input type="submit" value="保存" class="pro-btn btn-disabled" disabled="disabled" />
+</div>
+</div>
+<!-- /box-body -->
+<!-- box-footer -->
+<div class="box-footer">
+<p class="box-close-btn"><a href="#">キャンセル（閉じる）</a></p>
+</div>
+<!-- box-footer -->
+</div>
+<!--画像にグループを追加 c9-->
+<div id="box-c9" class="pro-cbox box-size750">
+<!-- box-header -->
+<div class="box-header clfix">
+<h3 class="box-head"><span class="solid"></span>画像のサイズ変更とは？</h3>
+<p class="box-close-btn"><a href="#">閉じる</a></p>
+</div>
+<!-- /box-header -->
+<!-- box-body -->
+<div class="box-body clfix">
+	<p class="mb10">店舗ページに表示するサムネイル画像の表示パターンを、「自動切抜き」と「画像縮小」のいずれかに設定できます。</p>
+	<p class="pro-txt3 cut-icon">赤枠は切り取り線</p>
+	<div class="fl mr10 w350">
+		<h4 class="pro-t4"><span class="square">■</span>自動切り抜き</h4>
+		<p class="inner-height ml10">元画像を画像枠のサイズに合わせて切り抜きます。</p>
+		<p class="mb20 ml10"><img src="img/cutting-image.jpg" height="88" width="289"></p>
+	</div>
+	<div class="fr w350">
+		<h4 class="pro-t4"><span class="square">■</span>画像縮小</h4>
+		<p class="inner-height ml10">元画像の長辺が画像枠のサイズに合うように調整して表示します。</p>
+		<p class="mb20 ml10"><img src="img/reduction-image.jpg" height="97" width="295"></p>
+	</div>
+</div>
+<!-- /box-body -->
+<!-- box-footer -->
+<div class="box-footer">
+<p class="box-close-btn"><a href="#">閉じる</a></p>
+</div>
+<!-- box-footer -->
+</div>
+
+<!--画像にグループを追加 c10-->
+<div id="box-c10" class="pro-cbox box-size500">
+<!-- box-body -->
+<div class="pro-fw-body">
+	<p class="px14 bold">グループとは？</p>
+	<p class="mt20 mb20">
+		グループとは、写真を分類するための機能です。<br>
+		画像にグループを設定すると、グループによる絞り込みができます。<br>
+		1つの画像に20個までグループを設定できます。
+	</p>
+	<p>（例）夏メニュー/定番メニュー/デザート/店内 など</p>
+</div>
+<!-- /box-body -->
+<!-- box-footer -->
+<div class="box-footer">
+<p class="box-close-btn"><a href="#">閉じる</a></p>
+</div>
+<!-- box-footer -->
+</div>
+
+<!--画像にグループを追加 c11-->
+<div id="box-c11" class="pro-cbox box-size500">
+<!-- box-body -->
+<div class="pro-fw-body">
+	<p class="mt20 mb20 ac">zipファイル内の画像枚数が100枚を超えているため、<br />アップロードできません。</p>
+	<p class="ac">zipファイル内の画像枚数を100枚以内にし、<br />再度アップロードを行ってください。</p>
+</div>
+<!-- /box-body -->
+<!-- box-footer -->
+<div class="box-footer">
+<p class="box-close-btn"><a href="#">閉じる</a></p>
+</div>
+<!-- box-footer -->
+</div>
+
+<div id="box-c12" class="pro-cbox box-size750">
+	<!-- box-header -->
+	<div class="box-header clfix">
+	<h3 class="box-head"><span class="solid"></span>画像登録について</h3>
+	<p class="box-close-btn"><a href="#">キャンセル（閉じる）</a></p>
+	</div>
+	<!-- /box-header -->
+<!-- box-body -->
+<div class="pro-fw-body mb15 ml10 mr5">
+	<p>jpg、gif、png、zipが対象です。<br>
+	※CMYK形式のjpgはアップロードできません。（詳しくは<a href="https://admin.gnavi.co.jp/ShopAdmin/help/prohelp/faq/#qA009" target="_blank">こちら</a>）<br>&nbsp;<br>
+	</p>
+	<table class="pro-table upload-notiice">
+		<tr>
+			<th class="al">画像を選択して<br />アップロードする場合</th>
+			<td class="al">画像ファイルは10MB以内<br />zipファイルは30MB以内（ファイル内の画像は100枚以内）<br />※複数ファイルをアップロードする場合はzip形式にしてください。</td>
+		</tr>
+		<tr>
+			<th>画像をドラッグ&amp;ドロップして<br />アップロードする場合</th>
+			<td>画像ファイルは10MB以内。（同時に登録できる画像ファイルは100枚以内）<br />※zipファイルはアップロードできません</td>
+		</tr>
+	</table>
+</div>
+<!-- /box-body -->
+<!-- box-footer -->
+<div class="box-footer clfix">
+<p class="box-close-btn"><a href="#">閉じる</a></p>
+</div>
+<!-- box-footer -->
+</div>
+
+
+
+</div>
+<!-- /hiddenBox -->
+
+</div>
+<!--/$CONTENT$-->
+<!--CONTENTNAVI-->
+<div id="contentNavi">
+<!--$contentsSideNavi$-->
+<div id="contentsSideNavi">
+<!--$SIDEMENU -->
+<div id="proSideNavi">
+<div class="Editing">
+<dl class="contentCategoryTitle contentCategoryLink">
+<dt class="contentCategoryTopLink"><a href="#" target="_self">レストランページ編集TOP</a></dt>
+</dl>
+<dl class="contentCategoryLink">
+<dt class="contentCategorySubHline">店舗情報</dt>
+<dd class="on"><a href="#">店舗TOP編集</a></dd>
+<dd><a href="#">今日の最新情報</a></dd>
+<dd><a href="#">地図</a></dd>
+<dd><a href="#">こだわり</a></dd>
+<dd><a href="#">カスタムページ</a></dd>
+<dd><a href="#">店舗の基本情報</a></dd>
+<dd><a href="#">店舗カラー</a></dd>
+<dt class="contentCategorySubHline">メニュー編集</dt>
+<dd><a href="#">メニュー</a></dd>
+<dd><a href="#">売れ筋メニュー</a></dd>
+<dt class="contentCategorySubHline">画像</dt>
+<dd><a href="#">写真</a></dd>
+<dd><a href="#">画像おきば</a></dd>
+<dt class="contentCategorySubHline">クーポン</dt>
+<dd><a href="#">クーポン</a></dd>
+<dt class="contentCategorySubHline">予約</dt>
+<dd><a href="#">予約</a></dd>
+<dt class="contentCategorySubHline">アップロード管理</dt>
+<dd><a href="#">アップロード管理</a></dd>
+<dt class="contentCategorySubHline">その他</dt>
+<dd><a href="#">QRコードダウンロード</a></dd>
+<dd><a href="#">ソーシャルメディア管理</a></dd>
+</dl>
+</div>
+</div>
+<!--/$SIDEMENU -->
+</div>
+<!--/$contentsSideNavi$-->
+
+<!--#everydayService-->
+<div id="everydayService">
+<h2>よく使うサービス</h2>
+<ul id="everydayServiceUl" class="serviceList">
+<li id="everydayServiceNoItem" class="first" style="display: none;">よく使うサービスはありません。</li>
+<li id="everydayServiceLiPrototype" class="itemSelect" style="display: none;"><a href="#" title=""></a></li>
+</ul>
+</div>
+<!--/#everydayService-->
+
+<!--#availableService-->
+<div id="availableService">
+<div class="h2line clfix">
+<h2>現在利用できるサービス</h2>
+<em id="toggle-btn">+</em></div>
+<div id="availableService-list">
+
+<!--#toolAnalysis-->
+<dl id="toolAnalysis">
+<dt>分析・集計ツール</dt>
+<dd class="toolList">
+<ul>
+<li class="first"><a href="#" title="GON（アクセス集計）" >GON（アクセス集計）</a>&nbsp;</li>
+<li><a href="#" title="売上管理" >売上管理</a>&nbsp;</li>
+</ul>
+</dd>
+</dl>
+<!--/#toolAnalysis-->
+
+<!--#toolPageEdit-->
+<dl id="toolPageEdit">
+<dt>ページ編集・催促ツール</dt>
+<dd class="toolList">
+<ul>
+<li class="first"><a href="#" title="レストランページ編集" >レストランページ編集</a>&nbsp;</li>
+<li><a href="#" title="カスタムページ編集" >カスタムページ編集</a>&nbsp;</li>
+<li><a href="#" title="予約編集" >予約編集</a>&nbsp;</li>
+<li><a href="#" title="携帯特別クーポン編集" >携帯特別クーポン編集</a>&nbsp;</li>
+<li><a href="#" title="外国語版ページ編集" >外国語版ページ編集</a>&nbsp;</li>
+<li><a href="#" title="レストラン基本情報編集" >レストラン基本情報編集</a>&nbsp;</li>
+<li><a href="#" title="レストラン検索情報編集" >レストラン検索情報編集</a>&nbsp;</li>
+<li><a href="#" title="サムネイル画像登録" >サムネイル画像登録</a>&nbsp;</li>
+<li><a href="#" title="QRコードダウンロード" >QRコードダウンロード</a>&nbsp;</li>
+<li><a href="#" title="特集内容編集" >特集内容編集</a>&nbsp;</li>
+<li><a href="#" title="新着情報管理" >新着情報管理</a>&nbsp;</li>
+<li><a href="#" title="スーパーらくらく幹事さん" >スーパーらくらく幹事さん</a>&nbsp;</li>
+<li><a href="#" title="とくとくプラン(バリュープラン)" >とくとくプラン(バリュープラン)</a>&nbsp;</li>
+<li><a href="#" title="ぐるなびNEWタッチ管理" >ぐるなびNEWタッチ管理</a>&nbsp;</li>
+<li><a href="#" title="シェフ・レシピ編集" >シェフ・レシピ編集</a>&nbsp;</li>
+<li><a href="#" title="ランチページ編集" >ランチページ編集</a>&nbsp;</li>
+<li><a href="#" title="ラーメンページ編集" >ラーメンページ編集</a>&nbsp;</li>
+<li><a href="#" title="イベントdeクーポン管理" target="_blank" class="discreteWin">イベントdeクーポン管理</a>&nbsp;</li>
+</ul>
+</dd>
+</dl>
+<!--/#toolPageEdit-->
+
+<!--#toolComunity-->
+<dl id="toolComunity">
+<dt>コミュニティツール</dt>
+<dd class="toolList">
+<ul>
+<li class="first"><a href="#" title="お店のブログ" target="_blank" class="discreteWin">お店のブログ</a>&nbsp;</li>
+<li><a href="#" title="口コミ管理（ファンの声返信）" target="_blank" class="discreteWin">口コミ管理（ファンの声返信）</a>&nbsp;</li>
+<li><a href="#" title="ＰＲＯコミュニティ広場" target="_blank" class="discreteWin">ＰＲＯコミュニティ広場</a>&nbsp;</li>
+</ul>
+</dd>
+</dl>
+<!--/#toolComunity-->
+
+<!--#toolAdvantage-->
+<dl id="toolAdvantage">
+<dt>その他お役立ち</dt>
+<dd class="toolList">
+<ul>
+<li class="first"><a href="#" title="週刊ぐるなび市場" target="_blank" class="discreteWin">週刊ぐるなび市場</a></li>
+<li><a href="#" title="食材クーポンカタログ" target="_blank" class="discreteWin">食材クーポンカタログ</a></li>
+<li><a href="#" title="ぐるなび×タスカル　プロカタログ" target="_blank" class="discreteWin">ぐるなび×タスカル　プロカタログ</a></li>
+<li><a href="#" title="らくらく求人" >らくらく求人</a>&nbsp;</li>
+<li><a href="#" title="ぐるなび福利厚生サービス（ぐるなびクラブオフ）" >ぐるなび福利厚生サービス（ぐるなびクラブオフ）</a>&nbsp;</li>
+<li><a href="#" title="ぐるなび大学" target="_blank" class="discreteWin">ぐるなび大学</a></li>
+<li><a href="#" title="動画で学ぶ" >動画で学ぶ</a>&nbsp;</li>
+<li><a href="#" title="アンケート結果レポート" >アンケート結果レポート</a>&nbsp;</li>
+<li><a href="#" title="ぐるなび通信" target="_blank" class="discreteWin">ぐるなび通信</a></li>
+<li><a href="#" title="電話相談窓口サービス" >電話相談窓口サービス</a>&nbsp;</li>
+<li><a href="#" title="セキュリティサービス" >セキュリティサービス</a>&nbsp;</li>
+<li><a href="#" title="経営サポート企業一覧" target="_blank" class="discreteWin">経営サポート企業一覧</a></li>
+<li><a href="#" title="新規開業・改装特集" target="_blank" class="discreteWin">新規開業・改装特集</a></li>
+</ul>
+</dd>
+</dl>
+<!--/#toolAdvantage-->
+
+</div>
+
+<!--#toolAllSearviceGuide-->
+<div id="toolAllSearviceGuide"><a href="#">全サービス案内</a></div>
+<!--/#toolAllSearviceGuide-->
+<!--#toolPurposeGuide-->
+<div id="toolPurposeGuide"><a href="#">目的別サービス案内</a></div>
+<!--/#toolPurposeGuide-->
+
+</div>
+<!--/#availableService-->
+
+</div>
+<!--/CONTENTNAVI-->
+
+<br style="clear: both;"/>
+</div>
+<!--/CONTAINER-->
+<p id="footer-page-top"><a href="#top">▲このページの先頭へ</a></p>
+<dl id="cs-contact">
+<dt>お問い合わせは「ぐるなびサポートセンター」へ</dt>
+<dd>0120−22−9672 （営業時間：平日 10:00〜18:00）</dd>
+</dl>
+<!--FOOTER-->
+<div id="footer">
+<p id="footerCopyright">Copyright&copy; Gurunavi, Inc. All rights reserved.</p>
+<dl id="footerLoginTime">
+<dt>前回ログイン：</dt>
+<dd>2011/07/25 10:43</dd>
+</dl>
+</div>
+<!--/FOOTER-->
+
+</div>
+<!--/PAGE-->
+
+<script src="../../c/pro_l.js"></script>
+<script src="../../c/pro_c.js"></script>
+<script src="js/dropzone.js"></script>
+<script src="js/img_strage.js"></script>
+</body>
+</html>
