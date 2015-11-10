@@ -1,0 +1,30 @@
+{
+  "name": "dev-stockcode",
+  "version": "1.0.0",
+  "description": "## Introduction - 個人的にためていくコード類 - 随時追加 - 主にhtml,js,css,ruby...etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komacchi/dev-stockcode.git"
+  },
+  "author": "komacchi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/komacchi/dev-stockcode/issues"
+  },
+  "homepage": "https://github.com/komacchi/dev-stockcode#readme",
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-csscomb": "^3.0.6",
+    "gulp-eslint": "^1.0.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-uglify": "^1.2.0",
+    "node-notifier": "^4.2.3"
+  }
+}

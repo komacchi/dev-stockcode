@@ -14,7 +14,11 @@
 ### Require
 
 - node.js
- - grunt or gulp
+ - gulp
+ - gulp-sass
+ - gulp-csscomb
+ - gulp-autoprefixer
+ - gulp-markdown
 - ruby
  - sass
  - compass
@@ -22,3 +26,4 @@
 
 ### Jenkins
 - local Jenkins→deploy
+ - Jenkinsから　CircleCIに移行させるつもり
